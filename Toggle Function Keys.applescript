@@ -9,9 +9,9 @@ tell application "System Events"
 			get properties
 			
 			click radio button "Keyboard" of tab group 1 of window "Keyboard"
-			click checkbox "Use all F1, F2, etc. keys as standard function keys" of tab group 1 of window "Keyboard"
+			click checkbox 1 of tab group 1 of window "Keyboard"
 			set messageToShow to "Function keys set to "
-			if (value of checkbox "Use all F1, F2, etc. keys as standard function keys" of tab group 1 of window "Keyboard") as boolean then
+			if (value of checkbox 1 of tab group 1 of window "Keyboard") as boolean then
 				set messageToShow to messageToShow & "standard function keys."
 			else
 				set messageToShow to messageToShow & "media/hardware controls."
